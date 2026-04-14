@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.pravatar.cc/150?img=1",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Khan",
+    "picture": "https://i.pravatar.cc/150?img=2",
+    "email": "sarah@example.com",
+    "days_since_contact": 5,
+    "status": "active",
+    "tags": ["office", "team"],
+    "bio": "Work colleague from marketing team.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Alex Smith",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "alex@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "buddy"],
+    "bio": "Workout partner and fitness enthusiast.",
+    "goal": 7,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "emily@example.com",
+    "days_since_contact": 2,
+    "status": "active",
+    "tags": ["family"],
+    "bio": "Cousin, lives nearby.",
+    "goal": 5,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 5,
+    "name": "Michael Lee",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "michael@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["business"],
+    "bio": "Business partner for startup ideas.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 6,
+    "name": "Ayesha Rahman",
+    "picture": "https://i.pravatar.cc/150?img=6",
+    "email": "ayesha@example.com",
+    "days_since_contact": 8,
+    "status": "active",
+    "tags": ["school", "friend"],
+    "bio": "School friend, loves art and painting.",
+    "goal": 12,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 7,
+    "name": "David Wilson",
+    "picture": "https://i.pravatar.cc/150?img=7",
+    "email": "david@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["travel"],
+    "bio": "Met during a trip abroad.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 8,
+    "name": "Nusrat Jahan",
+    "picture": "https://i.pravatar.cc/150?img=8",
+    "email": "nusrat@example.com",
+    "days_since_contact": 3,
+    "status": "active",
+    "tags": ["neighbor"],
+    "bio": "Lives next door, very helpful.",
+    "goal": 7,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 9,
+    "name": "Chris Evans",
+    "picture": "https://i.pravatar.cc/150?img=9",
+    "email": "chris@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "group"],
+    "bio": "College group mate.",
+    "goal": 10,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 10,
+    "name": "Fatima Noor",
+    "picture": "https://i.pravatar.cc/150?img=10",
+    "email": "fatima@example.com",
+    "days_since_contact": 6,
+    "status": "active",
+    "tags": ["online friend"],
+    "bio": "Met through online community.",
+    "goal": 8,
+    "next_due_date": "2025-07-24"
+  }
+]
