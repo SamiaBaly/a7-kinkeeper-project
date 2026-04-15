@@ -14,7 +14,7 @@ const Navbar = () => {
             <House />
             Home
           </NavLink>
-          <NavLink to={'/allFriends'} className="flex gap-2">
+          <NavLink to={'/timeline'} className="flex gap-2">
             <History />
             Timeline
           </NavLink>
