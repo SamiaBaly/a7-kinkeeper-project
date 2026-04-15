@@ -20,7 +20,7 @@ const Stats = () => {
 
   if (total === 0) {
     return (
-      <div className="h-[500px] bg-base-200 mb-8 rounded-2xl text-center flex flex-col justify-center shadow-md">
+      <div className="container mx-auto mt-4 h-[500px] bg-base-200 mb-8 rounded-2xl text-center flex flex-col justify-center shadow-md">
         <h2 className="text-3xl font-bold text-gray-400 mb-2">
           No Data Available
         </h2>
@@ -37,10 +37,10 @@ const Stats = () => {
 
   
   return (
-    <div className=" container mx-auto">
+    <div className="container mx-auto">
       <h1 className="text-3xl font-bold my-4">Friendship Analytics</h1>
 
-      <div className="my-8 flex justify-center items-center container mx-auto bg-base-200 py-5 rounded-2xl">
+      <div className="my-8 flex justify-center items-center bg-base-200 py-5 rounded-2xl">
         <PieChart
           style={{
             width: '100%',

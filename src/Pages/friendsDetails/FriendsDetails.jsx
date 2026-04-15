@@ -28,11 +28,10 @@ const FriendsDetails = () => {
     };
 
     setTimelineData(prev=>[...prev, newData]);
-    console.log(setTimelineData);
-  }
+    
   return (
-    <div className="container mx-auto my-10">
-      <div className="grid grid-cols-3 gap-5">
+    <div className="container mx-auto py-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div className="col-span-1">
           <div className="card bg-base-200 shadow-sm">
             <figure className="px-10 pt-10">
@@ -58,7 +57,10 @@ const FriendsDetails = () => {
 
               <div>
                 {tags.map(tag => (
-                  <button key={id} className="bg-green-100 px-3 mx-2 py-1 rounded-xl text-[16px]">
+                  <button
+                    key={id}
+                    className="bg-green-100 px-3 mx-2 py-1 rounded-xl text-[16px]"
+                  >
                     {tag}
                   </button>
                 ))}
@@ -123,25 +125,28 @@ const FriendsDetails = () => {
               </button>
             </div>
           </div>
-          <div className="col-span-3 grid grid-cols-3 gap-2 p-3 bg-base-200 m-2 shadow-sm rounded-xl">
-            <div
-              onClick={() => handleTimelineData('Meetup')}
-              className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer"
-            >
-              <PhoneForwarded className="mb-3" />
-              Call
-            </div>
-            <div
-              onClick={() => handleTimelineData('text')}
-              className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer"
-            >
-              <MessageSquare className="mb-3" /> text
-            </div>
-            <div
-              onClick={() => handleTimelineData('video')}
-              className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer"
-            >
-              <Video className="mb-3" /> video
+          <div className="col-span-3 bg-base-200 shadow-sm rounded-xl">
+            <h2 className='text-left mx-4 mt-4 text-xl font-bold text-gray-500'>Quick check in </h2>
+            <div className="grid grid-cols-3 gap-2 pt-3 px-3">
+              <div
+                onClick={() => handleTimelineData('Meetup')}
+                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+              >
+                <PhoneForwarded className="mb-3" />
+                Call
+              </div>
+              <div
+                onClick={() => handleTimelineData('text')}
+                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+              >
+                <MessageSquare className="mb-3" /> text
+              </div>
+              <div
+                onClick={() => handleTimelineData('video')}
+                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+              >
+                <Video className="mb-3" /> video
+              </div>
             </div>
           </div>
         </div>

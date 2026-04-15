@@ -6,10 +6,10 @@
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["college", "close friend"],
+    "tags": ["college", " friend"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "20 July 2025"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["office", "team"],
     "bio": "Work colleague from marketing team.",
     "goal": 10,
-    "next_due_date": "2025-07-25"
+    "next_due_date": "25 July 2025"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["gym", "buddy"],
     "bio": "Workout partner and fitness enthusiast.",
     "goal": 7,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "15 July 2025"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["family"],
     "bio": "Cousin, lives nearby.",
     "goal": 5,
-    "next_due_date": "2025-07-28"
+    "next_due_date": "28 July 2025"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["business"],
     "bio": "Business partner for startup ideas.",
     "goal": 10,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "18 July 2025"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["school", "friend"],
     "bio": "School friend, loves art and painting.",
     "goal": 12,
-    "next_due_date": "2025-07-23"
+    "next_due_date": "23 July 2025"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["travel"],
     "bio": "Met during a trip abroad.",
     "goal": 14,
-    "next_due_date": "2025-07-10"
+    "next_due_date": "10 July 2025"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["neighbor"],
     "bio": "Lives next door, very helpful.",
     "goal": 7,
-    "next_due_date": "2025-07-27"
+    "next_due_date": "27 July 2025"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["college", "group"],
     "bio": "College group mate.",
     "goal": 10,
-    "next_due_date": "2025-07-16"
+    "next_due_date": "16 July 2025"
   },
   {
     "id": 10,
@@ -117,6 +117,6 @@
     "tags": ["online friend"],
     "bio": "Met through online community.",
     "goal": 8,
-    "next_due_date": "2025-07-24"
+    "next_due_date": "24 July 2025"
   }
 ]

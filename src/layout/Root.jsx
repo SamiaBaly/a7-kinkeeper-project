@@ -7,10 +7,12 @@ import HeroBanner from '../componants/HomePage/HeroBanner/HeroBanner';
 
 const Root = () => {
   return (
-    <div>
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 };
