@@ -18,7 +18,7 @@ const Navbar = () => {
             <History />
             Timeline
           </NavLink>
-          <NavLink to={'/friendsDetails'} className="flex gap-2">
+          <NavLink to={'/stats'} className="flex gap-2">
             
               <ChartLine />
               Stats

@@ -9,6 +9,7 @@ import HomePage from './Pages/homePage/HomePage.jsx';
 import FriendsDetails from './Pages/friendsDetails/FriendsDetails.jsx';
 import TimelineContext from './context/TimelineContext.jsx';
 import timeLine from './componants/timeLine/TimeLine.jsx';
+import Stats from './componants/stats/Stats.jsx';
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/timeLine",
         Component:timeLine,
+      },
+      {
+        path:"/stats",
+        Component:Stats,
       }
      
     ],
