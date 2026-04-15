@@ -11,14 +11,16 @@ const Navbar = () => {
         <img src={logoImg} alt="KeenKeeper" />
 
         {/* Mobile Dropdown */}
-        <div className="dropdown lg:hidden">
+        <div className="dropdown dropdown-end lg:hidden relative">
+          {/* Button */}
           <div tabIndex={0} role="button" className="btn btn-ghost text-3xl">
             ☰
           </div>
 
+          {/* Menu */}
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-3 z-[999]"
           >
             <li>
               <NavLink to="/" className="flex gap-2">

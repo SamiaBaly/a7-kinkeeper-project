@@ -37,9 +37,9 @@ const Friend = ({ friend }) => {
             </div>
             <div className="card-actions">
               <button
-                className={`px-3 text-xl my-2 rounded-xl ${status === 'overdue' ? 
-                  'bg-amber-100' :
-                  status==="on-track"? 'bg-red-100 ':"bg-green-100"}`}
+                className={`px-3 text-xl my-2 rounded-xl text-white ${status === 'overdue' ? 
+                  'bg-amber-500' :
+                  status==="on-track"? 'bg-red-500 ':"bg-green-800"}`}
               >
                 {status}
               </button>

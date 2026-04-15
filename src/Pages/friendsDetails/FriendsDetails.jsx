@@ -44,12 +44,12 @@ const FriendsDetails = () => {
             <div className="card-body items-center text-center">
               <h2 className="card-title font-bold text-2xl">{name}</h2>
               <button
-                className={`px-3 text-xl my-2 rounded-xl ${
+                className={`px-3 text-xl my-2 rounded-xl text-white ${
                   status === 'overdue'
-                    ? 'bg-amber-100'
+                    ? 'bg-amber-500'
                     : status === 'on-track'
-                      ? 'bg-red-100 '
-                      : 'bg-green-100'
+                      ? 'bg-red-500 '
+                      : 'bg-green-800'
                 }`}
               >
                 {status}
