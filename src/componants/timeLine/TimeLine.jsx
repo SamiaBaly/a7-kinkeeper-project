@@ -19,20 +19,32 @@ const TimeLine = () => {
   }).sort((a,b)=>{
     return typeOrder[a.type]-typeOrder[b.type]
   });
+
+
+
+
   return (
     <div className="container mx-auto">
       <h1 className="text-5xl font-bold my-4">Timeline</h1>
       <select
-        className=" p-4 border mb-3 rounded-xl text-gray-600 shadow-sm focus:outline-none"
+        className=" p-2 border mb-3 rounded-xl text-gray-600 shadow-sm focus:outline-none"
         value={filter}
         onChange={e => setFilter(e.target.value)}
       >
-        <option value="all">Filter timeline</option>
-        <option value="Meetup">Call</option>
+        <option value="all">All Friends</option>
+        <option value="Meetup">Meetup</option>
         <option value="text">Text</option>
         <option value="video">Video</option>
       </select>
-      {filterData.map(data => {
+
+
+
+      {filterData.length ===0?(
+        <div className='h-[500px] bg-base-200 mb-8 rounded-2xl text-center flex flex-col justify-center shadow-md'>
+          <h2 className='text-3xl font-bold text-gray-400 mb-2'>No Data Available</h2>
+          <p className='text-gray-400'>Please go to home</p>
+        </div>
+      ):( filterData.map(data => {
         const date = new Date(data.time).toLocaleDateString('en-US', {
           month: 'long',
           day: 'numeric',
@@ -61,7 +73,7 @@ const TimeLine = () => {
             </div>
           </div>
         );
-      })}
+      }))}
     </div>
   );
 };
