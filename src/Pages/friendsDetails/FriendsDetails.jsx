@@ -86,66 +86,87 @@ const FriendsDetails = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-2 grid grid-cols-3 text-center">
-          <div className="col-span-1 bg-base-200 m-2 shadow-sm rounded-xl flex justify-center items-center">
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center gap-3">
+          {/* Days Since Contact */}
+          <div className="bg-base-200 shadow-sm rounded-xl flex justify-center items-center p-6">
             <div>
-              <h2 className="text-[20px] font-bold text-[#244D3F] mb-">
+              <h2 className="text-lg md:text-xl font-bold text-[#244D3F]">
                 {days_since_contact}
               </h2>
-              <p className="text-[18px] text-[#64748B]">Days Since Contact</p>
+              <p className="text-sm md:text-[18px] text-[#64748B]">
+                Days Since Contact
+              </p>
             </div>
           </div>
-          <div className="col-span-1 bg-base-200 m-2 shadow-sm rounded-xl flex justify-center items-center">
+
+          {/* Goal */}
+          <div className="bg-base-200 shadow-sm rounded-xl flex justify-center items-center p-6">
             <div>
-              <h2 className="text-[20px] font-bold text-[#244D3F] mb-">
+              <h2 className="text-lg md:text-xl font-bold text-[#244D3F]">
                 {goal}
               </h2>
-              <p className="text-[18px] text-[#64748B]">Goal (Days)</p>
+              <p className="text-sm md:text-[18px] text-[#64748B]">
+                Goal (Days)
+              </p>
             </div>
           </div>
-          <div className="col-span-1 bg-base-200 m-2 shadow-sm rounded-xl flex justify-center items-center">
+
+          {/* Next Due */}
+          <div className="bg-base-200 shadow-sm rounded-xl flex justify-center items-center p-6">
             <div>
-              <h2 className="text-[20px] font-bold text-[#244D3F] mb-">
+              <h2 className="text-lg md:text-xl font-bold text-[#244D3F]">
                 {next_due_date}
               </h2>
-              <p className="text-[18px] text-[#64748B]">Next Due</p>
+              <p className="text-sm md:text-[18px] text-[#64748B]">Next Due</p>
             </div>
           </div>
-          <div className="col-span-3 bg-base-200 m-2 shadow-sm rounded-xl text-left  px-10 text-2xl flex justify-between items-center">
+
+          {/* Relationship Goal */}
+          <div className="col-span-1 sm:col-span-2 lg:col-span-3 bg-base-200 shadow-sm rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center p-5 gap-4 text-left">
             <div>
-              <p className="text-[#244D3F] font-bold mb-5">Relationship Goal</p>
-              <p className="text-[#64748B]">
+              <p className="text-[#244D3F] font-bold text-lg mb-2">
+                Relationship Goal
+              </p>
+              <p className="text-[#64748B] text-sm md:text-base">
                 Connect every <span className="font-bold">{goal} days</span>
               </p>
             </div>
-            <div>
-              <button className="btn">
-                <SquarePen />
-                Edit
-              </button>
-            </div>
+
+            <button className="btn w-full md:w-auto">
+              <SquarePen />
+              Edit
+            </button>
           </div>
-          <div className="col-span-3 bg-base-200 shadow-sm rounded-xl">
-            <h2 className='text-left mx-4 mt-4 text-xl font-bold text-gray-500'>Quick check in </h2>
-            <div className="grid grid-cols-3 gap-2 pt-3 px-3">
+
+          {/* Quick Check-in */}
+          <div className="col-span-1 sm:col-span-2 lg:col-span-3 bg-base-200 shadow-sm rounded-xl p-4">
+            <h2 className="text-left text-lg font-bold text-gray-500 mb-3">
+              Quick check in
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div
                 onClick={() => handleTimelineData('Meetup')}
-                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
               >
-                <PhoneForwarded className="mb-3" />
+                <PhoneForwarded className="mb-2" />
                 Call
               </div>
+
               <div
                 onClick={() => handleTimelineData('text')}
-                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
               >
-                <MessageSquare className="mb-3" /> text
+                <MessageSquare className="mb-2" />
+                Text
               </div>
+
               <div
                 onClick={() => handleTimelineData('video')}
-                className="bg-base-100 rounded-2xl flex justify-center items-center font-bold text-xl text-gray-500 flex-col shadow-md cursor-pointer py-6"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
               >
-                <Video className="mb-3" /> video
+                <Video className="mb-2" />
+                Video
               </div>
             </div>
           </div>
