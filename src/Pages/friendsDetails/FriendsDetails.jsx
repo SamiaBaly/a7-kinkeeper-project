@@ -28,7 +28,7 @@ const FriendsDetails = () => {
     };
 
     setTimelineData(prev=>[...prev, newData]);
-    
+  }
   return (
     <div className="container mx-auto py-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

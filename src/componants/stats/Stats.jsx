@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
 import { TimelineContextPro } from '../../context/TimelineContext';
+import { TrendingDown } from 'lucide-react';
 
 
 
@@ -20,9 +21,10 @@ const Stats = () => {
 
   if (total === 0) {
     return (
-      <div className="container mx-auto mt-4 h-[500px] bg-base-200 mb-8 rounded-2xl text-center flex flex-col justify-center shadow-md">
+      <div className="container mx-auto mt-10 h-[600px] bg-base-200  rounded-2xl text-center flex flex-col justify-center shadow-md">
+        <TrendingDown className='mx-auto text-gray-500' />
         <h2 className="text-3xl font-bold text-gray-400 mb-2">
-          No Data Available
+          No stats Available
         </h2>
         <p className="text-gray-400">Please go to home</p>
       </div>

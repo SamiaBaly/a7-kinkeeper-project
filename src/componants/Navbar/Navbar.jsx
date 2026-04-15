@@ -1,29 +1,64 @@
 import React from 'react';
-import logoImg from "../../assets/logo.png"
+import logoImg from '../../assets/logo.png';
 import { NavLink } from 'react-router';
-import { RiTimeLine } from 'react-icons/ri';
 import { ChartLine, History, House } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <div className="shadow-md">
+    <div className="shadow-md bg-base-100">
       <nav className="container mx-auto flex justify-between items-center py-4 px-3">
+        {/* Logo */}
         <img src={logoImg} alt="KeenKeeper" />
-        <ul className="flex justify-between items-center space-x-4 font-semibold text-[#64748B]">
-          <NavLink to={'/'} className="flex gap-2">
-            <House />
-            Home
-          </NavLink>
-          <NavLink to={'/timeline'} className="flex gap-2">
-            <History />
-            Timeline
-          </NavLink>
-          <NavLink to={'/stats'} className="flex gap-2">
-            
-              <ChartLine />
-              Stats
-          
-          </NavLink>
+
+        {/* Mobile Dropdown */}
+        <div className="dropdown lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost text-3xl">
+            ☰
+          </div>
+
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <NavLink to="/" className="flex gap-2">
+                <House /> Home
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/timeline" className="flex gap-2">
+                <History /> Timeline
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/stats" className="flex gap-2">
+                <ChartLine /> Stats
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center space-x-6 font-semibold text-[#64748B]">
+          <li>
+            <NavLink to="/" className="flex gap-2">
+              <House /> Home
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/timeline" className="flex gap-2">
+              <History /> Timeline
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/stats" className="flex gap-2">
+              <ChartLine /> Stats
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>
