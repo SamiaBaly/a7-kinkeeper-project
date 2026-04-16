@@ -1,16 +1,61 @@
-# React + Vite
+# 🌟 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+**KeenKeeper** is a modern and user-friendly web application designed to help you maintain and nurture meaningful relationships. It acts as a personal relationship tracker where you can monitor your interactions, stay connected, and never forget to check in with the people who matter most.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Purpose
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+In today’s busy world, it’s easy to lose touch with friends and loved ones. KeenKeeper solves this problem by helping you:
 
-## Expanding the ESLint configuration
+* Track your interactions
+* Get reminders to reconnect
+* Organize your relationships effectively
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+* 👥 **Friend Management**
+  Add, view, and manage your friends easily.
+
+* ⏰ **Contact Tracking**
+  See how long it has been since you last connected.
+
+* 📊 **Status Overview**
+  Categorize friends as:
+
+  * ✅ On Track
+  * ⚠️ Almost Due
+  * ❌ Overdue
+
+* 🧠 **Smart Organization**
+  Tag friends (e.g., college, office, gym, family).
+
+* 📅 **Timeline View**
+  Track communication history like calls, texts, or meetups.
+
+* 🔔 **Notifications**
+  Stay updated using toast notifications.
+
+* 🎨 **Modern UI**
+  Clean and responsive design using Tailwind CSS & DaisyUI.
+
+---
+
+## 🛠️ Technologies Used
+
+* ⚛️ **React.js** — Frontend library
+* 🎨 **Tailwind CSS** — Styling
+* 🌼 **DaisyUI** — UI components
+* 🧠 **JavaScript (ES6+)** — Logic & functionality
+* 🔔 **React-Toastify** — Notifications
+* 🗂️ **JSON** — Data handling
+
+
+
+## ❤️ Final Note
+
+KeenKeeper is more than just an app — it's a small step toward maintaining stronger, healthier relationships in your life.
