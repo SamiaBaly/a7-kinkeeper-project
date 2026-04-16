@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="bg-[#244D3F] text-white">
       <div className="container mx-auto text-center py-[80px]">
         <div>
-          <img className="mx-auto mb-4" src={footerImg} alt="" />
+          <img className="mx-auto mb-4 w-32 md:w-40" src={footerImg} alt="" />
           <p>
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
@@ -17,9 +17,21 @@ const Footer = () => {
           <div>
             <p className="text-xl font-bold mt-4">Social Links</p>
             <div className="flex justify-center items-center gap-3 my-4">
-              <img src={insta} alt="" />
-              <img src={facebook} alt="" />
-              <img src={xlogo} alt="" />
+              <img
+                className="w-6 md:w-8 cursor-pointer hover:scale-110 transition"
+                src={insta}
+                alt=""
+              />
+              <img
+                className="w-6 md:w-8 cursor-pointer hover:scale-110 transition"
+                src={facebook}
+                alt=""
+              />
+              <img
+                className="w-6 md:w-8 cursor-pointer hover:scale-110 transition"
+                src={xlogo}
+                alt=""
+              />
             </div>
           </div>
         </div>

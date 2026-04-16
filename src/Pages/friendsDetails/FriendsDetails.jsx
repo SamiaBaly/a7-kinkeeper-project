@@ -157,7 +157,7 @@ const FriendsDetails = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div
                 onClick={() => handleTimelineData('Meetup')}
-                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5 "
               >
                 <PhoneForwarded className="mb-2" />
                 Call
@@ -165,7 +165,7 @@ const FriendsDetails = () => {
 
               <div
                 onClick={() => handleTimelineData('text')}
-                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5 "
               >
                 <MessageSquare className="mb-2" />
                 Text
@@ -173,7 +173,7 @@ const FriendsDetails = () => {
 
               <div
                 onClick={() => handleTimelineData('video')}
-                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5"
+                className="bg-base-100 rounded-xl flex flex-col justify-center items-center shadow-md cursor-pointer py-5 "
               >
                 <Video className="mb-2" />
                 Video

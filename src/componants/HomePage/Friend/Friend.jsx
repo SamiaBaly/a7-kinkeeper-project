@@ -19,7 +19,12 @@ const Friend = ({ friend }) => {
   return (
     <div>
       <Link to={`/Friends/${id}`}>
-        <div className="card bg-base-200 shadow-sm">
+        <div
+          className="card bg-base-200 shadow-sm hover:shadow-xl 
+  hover:-translate-y-2 
+  hover:scale-[1.02] 
+  transition-all"
+        >
           <figure className="px-10 pt-10">
             <img src={picture} alt="Shoes" className="rounded-full w-[100px]" />
           </figure>
@@ -37,9 +42,13 @@ const Friend = ({ friend }) => {
             </div>
             <div className="card-actions">
               <button
-                className={`px-3 text-xl my-2 rounded-xl text-white ${status === 'overdue' ? 
-                  'bg-amber-500' :
-                  status==="on-track"? 'bg-red-500 ':"bg-green-800"}`}
+                className={`px-3 text-xl my-2 rounded-xl text-white ${
+                  status === 'overdue'
+                    ? 'bg-amber-500'
+                    : status === 'on-track'
+                      ? 'bg-red-500 '
+                      : 'bg-green-800'
+                }`}
               >
                 {status}
               </button>

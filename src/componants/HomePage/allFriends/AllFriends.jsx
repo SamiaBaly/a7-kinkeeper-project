@@ -8,10 +8,17 @@ const AllFriends = () => {
   const friends=use(friendsPromise);
  
   return (
-    <div className='my-10 border-t border-gray-200'>
+    <div className="my-10 border-t border-gray-200">
       <h2 className="text-3xl font-bold my-5">Your Friends</h2>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-        {friends.map((friend,index) => (
+      <div
+        className="grid 
+    grid-cols-1 
+    sm:grid-cols-2 
+    md:grid-cols-3 
+    lg:grid-cols-4  
+    gap-4"
+      >
+        {friends.map((friend, index) => (
           <div>
             <Friend key={index} friend={friend}></Friend>
           </div>
