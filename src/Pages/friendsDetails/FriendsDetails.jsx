@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import { MdOutlineSnooze } from 'react-icons/md';
 import { useLoaderData } from 'react-router';
 import { TimelineContextPro } from '../../context/TimelineContext';
+import { toast } from 'react-toastify';
+
 
 const FriendsDetails = () => {
   const users=useLoaderData();
@@ -28,7 +30,15 @@ const FriendsDetails = () => {
     };
 
     setTimelineData(prev=>[...prev, newData]);
-  }
+   
+    if (type === 'Meetup') {
+    toast.success(`Call with ${name}`);
+  } else if (type === 'text') {
+    toast.info(`Texted ${name}`);
+  } else if (type === 'video') {
+    toast(`Video call with ${name}`);
+  };
+};
   return (
     <div className="container mx-auto py-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -56,9 +66,9 @@ const FriendsDetails = () => {
               </button>
 
               <div>
-                {tags.map(tag => (
+                {tags.map((tag, index) => (
                   <button
-                    key={id}
+                    key={index}
                     className="bg-green-100 px-3 mx-2 py-1 rounded-xl text-[16px]"
                   >
                     {tag}

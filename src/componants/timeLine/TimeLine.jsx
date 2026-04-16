@@ -49,7 +49,7 @@ const TimeLine = () => {
           </p>
         </div>
       ) : (
-        filterData.map(data => {
+        filterData.map((data , i)=> {
           const date = new Date(data.time).toLocaleDateString('en-US', {
             month: 'long',
             day: 'numeric',
@@ -58,7 +58,7 @@ const TimeLine = () => {
 
           return (
             <div
-              key={data.id}
+              key={i}
               className="bg-base-200 shadow-md px-4 py-5 sm:py-6 md:py-8 my-3 rounded-xl
                          flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4"
             >
